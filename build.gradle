@@ -15,6 +15,8 @@ dependencies {
     implementation 'io.quarkus:quarkus-jackson'
     implementation 'org.apache.camel.quarkus:camel-quarkus-caffeine'
     implementation 'io.quarkus:quarkus-arc'
+    implementation 'io.quarkus:quarkus-resteasy'
+    implementation 'io.quarkus:quarkus-resteasy-mutiny'
     testImplementation 'io.quarkus:quarkus-junit5'
 }
 

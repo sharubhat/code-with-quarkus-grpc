@@ -4,8 +4,8 @@ import io.quarkus.grpc.GrpcService;
 
 import io.smallrye.mutiny.Uni;
 
-@GrpcService
-public class HelloGrpcService implements HelloGrpc {
+@GrpcService    // expose implementation as a bean
+public class HelloGrpcService implements HelloGrpc {    // HelloGrpc is a service defined in proto.
 
     @Override
     public Uni<HelloReply> sayHello(HelloRequest request) {
